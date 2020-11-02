@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RHBtoHEX" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0Qo-2F-Lcc" propertyAccessControl="none">
+                                <rect key="frame" x="44" y="149" width="329" height="32"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="Rkt-q7-ko1"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="RGB-HEX"/>
+                                    <segment title="HEX-RGB"/>
+                                </segments>
+                                <color key="tintColor" systemColor="systemGroupedBackgroundColor"/>
+                                <color key="selectedSegmentTintColor" systemColor="linkColor"/>
+                                <connections>
+                                    <action selector="segmentchanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="BWu-Uy-ehb"/>
+                                </connections>
+                            </segmentedControl>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="KIRMIZI - RED " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NAa-ct-5v3">
+                                <rect key="frame" x="77" y="262" width="276" height="35"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="xaY-7m-047"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="YEŞİL - GREEN" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cFr-gd-Qso">
+                                <rect key="frame" x="77" y="329" width="276" height="34"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="pXF-ip-zHI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MAVİ - BLUE" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gqr-qp-6Kg">
+                                <rect key="frame" x="77" y="396" width="276" height="34"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="rO6-c7-WgK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gU2-VY-Gdh">
+                                <rect key="frame" x="122" y="641" width="173" height="48"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="w4Z-lK-r5K"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemBlueColor"/>
+                                <state key="normal" title="CONVERT"/>
+                                <connections>
+                                    <action selector="converterclicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JMe-av-Orc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBk-z7-j3q">
+                                <rect key="frame" x="20" y="489" width="382" height="126"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UnN-Cs-Tya">
+                                <rect key="frame" x="16" y="715" width="382" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cFr-gd-Qso" firstAttribute="trailing" secondItem="gqr-qp-6Kg" secondAttribute="trailing" id="0q5-mu-P7J"/>
+                            <constraint firstItem="NAa-ct-5v3" firstAttribute="leading" secondItem="cFr-gd-Qso" secondAttribute="leading" id="EFj-35-REf"/>
+                            <constraint firstItem="zBk-z7-j3q" firstAttribute="centerX" secondItem="gU2-VY-Gdh" secondAttribute="centerX" id="GZg-6O-GMe"/>
+                            <constraint firstItem="zBk-z7-j3q" firstAttribute="trailing" secondItem="gqr-qp-6Kg" secondAttribute="trailing" id="HhU-gy-T3b"/>
+                            <constraint firstItem="zBk-z7-j3q" firstAttribute="top" secondItem="gqr-qp-6Kg" secondAttribute="bottom" constant="54" id="Jxd-fa-wr3"/>
+                            <constraint firstItem="NAa-ct-5v3" firstAttribute="top" secondItem="0Qo-2F-Lcc" secondAttribute="bottom" constant="82" id="K1k-CL-R3f"/>
+                            <constraint firstItem="gqr-qp-6Kg" firstAttribute="top" secondItem="cFr-gd-Qso" secondAttribute="bottom" constant="33" id="Mdd-2G-hbG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Qo-2F-Lcc" secondAttribute="trailing" constant="41" id="Pj0-Nt-Qku"/>
+                            <constraint firstItem="gU2-VY-Gdh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="129" id="Siq-4m-AJW"/>
+                            <constraint firstItem="zBk-z7-j3q" firstAttribute="leading" secondItem="gqr-qp-6Kg" secondAttribute="leading" id="WXL-qq-AoW"/>
+                            <constraint firstItem="NAa-ct-5v3" firstAttribute="trailing" secondItem="cFr-gd-Qso" secondAttribute="trailing" id="Wh7-Wj-gaZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NAa-ct-5v3" secondAttribute="trailing" constant="61" id="ZI7-Jm-fsg"/>
+                            <constraint firstItem="0Qo-2F-Lcc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="aaT-lv-68H"/>
+                            <constraint firstItem="0Qo-2F-Lcc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="105" id="g3D-Xn-Xy7"/>
+                            <constraint firstItem="gU2-VY-Gdh" firstAttribute="top" secondItem="zBk-z7-j3q" secondAttribute="bottom" constant="49" id="neI-wL-S4J"/>
+                            <constraint firstItem="NAa-ct-5v3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="77" id="vfS-Oq-mP5"/>
+                            <constraint firstItem="cFr-gd-Qso" firstAttribute="leading" secondItem="gqr-qp-6Kg" secondAttribute="leading" id="w4z-vd-WVx"/>
+                            <constraint firstItem="cFr-gd-Qso" firstAttribute="top" secondItem="NAa-ct-5v3" secondAttribute="bottom" constant="32" id="zfF-z6-uXX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bluetxt" destination="gqr-qp-6Kg" id="91d-Of-oYr"/>
+                        <outlet property="btnconverter" destination="gU2-VY-Gdh" id="RLk-53-0IA"/>
+                        <outlet property="grenntxt" destination="cFr-gd-Qso" id="EJ7-O7-AT7"/>
+                        <outlet property="redtxt" destination="NAa-ct-5v3" id="9Yi-BV-TId"/>
+                        <outlet property="renkkodusonuc" destination="UnN-Cs-Tya" id="v0T-eu-UBK"/>
+                        <outlet property="selectedcolor" destination="zBk-z7-j3q" id="b2L-2L-gmr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

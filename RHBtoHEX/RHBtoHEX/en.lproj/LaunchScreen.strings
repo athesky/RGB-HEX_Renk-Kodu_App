@@ -1,0 +1,24 @@
+
+/* Class = "UITextField"; placeholder = "KIRMIZI - RED "; ObjectID = "4Vz-Od-DNx"; */
+"4Vz-Od-DNx.placeholder" = "KIRMIZI - RED ";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ILl-IC-D7u"; */
+"ILl-IC-D7u.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "MAVİ - BLUE"; ObjectID = "e8L-bv-uAw"; */
+"e8L-bv-uAw.placeholder" = "MAVİ - BLUE";
+
+/* Class = "UIButton"; normalTitle = "CONVERT(RGB->HEX)"; ObjectID = "j8l-h8-WAs"; */
+"j8l-h8-WAs.normalTitle" = "CONVERT(RGB->HEX)";
+
+/* Class = "UITextField"; placeholder = "YEŞİL - GREEN"; ObjectID = "pfG-jT-cFt"; */
+"pfG-jT-cFt.placeholder" = "YEŞİL - GREEN";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "rjx-yo-vMJ"; */
+"rjx-yo-vMJ.text" = "Label";
+
+/* Class = "UISegmentedControl"; tIU-e2-Drn.segmentTitles[0] = "RGB-HEX"; ObjectID = "tIU-e2-Drn"; */
+"tIU-e2-Drn.segmentTitles[0]" = "RGB-HEX";
+
+/* Class = "UISegmentedControl"; tIU-e2-Drn.segmentTitles[1] = "HEX-RGB"; ObjectID = "tIU-e2-Drn"; */
+"tIU-e2-Drn.segmentTitles[1]" = "HEX-RGB";
